@@ -5,20 +5,20 @@
 class Dev < Formula
   desc "A CLI tool for managing development projects"
   homepage "https://github.com/dsaiztc/dev"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.1.0/dev_0.1.0_darwin_amd64.tar.gz"
-      sha256 "96ba43e37511f380c8b9a27bf54de513b8cf1974caf9218af24f03f51bbf9936"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_darwin_amd64.tar.gz"
+      sha256 "5007249d3a81514c4d63a98782bad6aacf037562473111174993d068b6f55fc6"
 
       def install
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.1.0/dev_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7f8fc03c657f782df5514396dc6572a4e80c215e43b3a25c23f03875fc438bea"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_darwin_arm64.tar.gz"
+      sha256 "ce5e0d58c201dbda995f1ce171598bc6e015a614c982bfd4ca4e10051c3c6563"
 
       def install
         bin.install "dev"
@@ -28,15 +28,15 @@ class Dev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.1.0/dev_0.1.0_linux_amd64.tar.gz"
-      sha256 "abd7e74db06a99228250ef7404484b55ffa9da39f08ebb9286193953f5da0752"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_linux_amd64.tar.gz"
+      sha256 "1f8e7a21fd15eedb0b9a993bab0d194d8d767a51d08d10c7bd4d3def0b51001a"
       def install
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.1.0/dev_0.1.0_linux_arm64.tar.gz"
-      sha256 "483f5057b8a6198db796a5adcdf9b6c863d02aa6f146a37bc9d47a596eed9f91"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_linux_arm64.tar.gz"
+      sha256 "2fb30541f2e2aba6c66debc147101a76e4624e4094fb8578ae65bbb3d980176b"
       def install
         bin.install "dev"
       end
