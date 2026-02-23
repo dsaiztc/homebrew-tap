@@ -5,22 +5,22 @@
 class Dev < Formula
   desc "A CLI tool for managing development projects"
   homepage "https://github.com/dsaiztc/dev"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_darwin_amd64.tar.gz"
-      sha256 "5007249d3a81514c4d63a98782bad6aacf037562473111174993d068b6f55fc6"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.3.0/dev_0.3.0_darwin_amd64.tar.gz"
+      sha256 "5c7bd5e2746167e1acc6b7c751917f9551059a127c80c2c863858c90d90993e8"
 
-      def install
+      define_method(:install) do
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_darwin_arm64.tar.gz"
-      sha256 "ce5e0d58c201dbda995f1ce171598bc6e015a614c982bfd4ca4e10051c3c6563"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.3.0/dev_0.3.0_darwin_arm64.tar.gz"
+      sha256 "7c82817488e75284e45fcb8f0d372a5e7ea1ff19f97669b52d733a7af6c5ed7c"
 
-      def install
+      define_method(:install) do
         bin.install "dev"
       end
     end
@@ -28,16 +28,16 @@ class Dev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_linux_amd64.tar.gz"
-      sha256 "1f8e7a21fd15eedb0b9a993bab0d194d8d767a51d08d10c7bd4d3def0b51001a"
-      def install
+      url "https://github.com/dsaiztc/dev/releases/download/v0.3.0/dev_0.3.0_linux_amd64.tar.gz"
+      sha256 "f64b7a13a6bb06aa31dc5c3d2ad4fb6b1f24e1e97d33c34c8d17d8ed2e0232eb"
+      define_method(:install) do
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.2.0/dev_0.2.0_linux_arm64.tar.gz"
-      sha256 "2fb30541f2e2aba6c66debc147101a76e4624e4094fb8578ae65bbb3d980176b"
-      def install
+      url "https://github.com/dsaiztc/dev/releases/download/v0.3.0/dev_0.3.0_linux_arm64.tar.gz"
+      sha256 "decf400a46c126d6049b89511efefa6efc91a482a9af37eba782410fec4c2d54"
+      define_method(:install) do
         bin.install "dev"
       end
     end
