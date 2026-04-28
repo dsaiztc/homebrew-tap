@@ -5,20 +5,20 @@
 class Trl < Formula
   desc "trl — A modern CLI for Trello"
   homepage "https://github.com/dsaiztc/trl"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dsaiztc/trl/releases/download/v0.2.0/trl_0.2.0_darwin_amd64.tar.gz"
-      sha256 "6dea9f0f30422e3ab178c34e28fc580ca118f952ea241db0f8e2938991a45e51"
+      url "https://github.com/dsaiztc/trl/releases/download/v0.3.0/trl_0.3.0_darwin_amd64.tar.gz"
+      sha256 "c55219c0cade9fdfdd399f2a9cd84e5574f0f6f4812c0bfbf476f0fbdfe4dca9"
 
       define_method(:install) do
         bin.install "trl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dsaiztc/trl/releases/download/v0.2.0/trl_0.2.0_darwin_arm64.tar.gz"
-      sha256 "732ad128e1e5e5a8df2055b746824d8c08497814425d3bc7fb25f40a49ef07cc"
+      url "https://github.com/dsaiztc/trl/releases/download/v0.3.0/trl_0.3.0_darwin_arm64.tar.gz"
+      sha256 "e01a4f9c9dc58e2d6645b06ac2639fcbf99ad1cf90fa4b4d93fabff443420b01"
 
       define_method(:install) do
         bin.install "trl"
@@ -28,15 +28,15 @@ class Trl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/trl/releases/download/v0.2.0/trl_0.2.0_linux_amd64.tar.gz"
-      sha256 "57ccfcd43287e9a9dcaaba5d030531dd732ec53df10380d2cbb1ec1142a363ca"
+      url "https://github.com/dsaiztc/trl/releases/download/v0.3.0/trl_0.3.0_linux_amd64.tar.gz"
+      sha256 "39389551a5d2cccc8ef8fb603688ad7afc4fb6892bd1faf327b664ad0f75958a"
       define_method(:install) do
         bin.install "trl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/trl/releases/download/v0.2.0/trl_0.2.0_linux_arm64.tar.gz"
-      sha256 "9421066481595e4c921f84a8c357d7038d8f6f33fb126e03be35152becb56836"
+      url "https://github.com/dsaiztc/trl/releases/download/v0.3.0/trl_0.3.0_linux_arm64.tar.gz"
+      sha256 "68a01bc54fe39f998987e67d56b69de8c1b6211ca35c7adc0e8a2c9c9e332a47"
       define_method(:install) do
         bin.install "trl"
       end
