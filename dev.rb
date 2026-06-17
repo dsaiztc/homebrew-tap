@@ -5,20 +5,20 @@
 class Dev < Formula
   desc "A CLI tool for managing development projects"
   homepage "https://github.com/dsaiztc/dev"
-  version "0.8.0"
+  version "0.9.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.8.0/dev_0.8.0_darwin_amd64.tar.gz"
-      sha256 "d9b6b1a9171901ac396ffe4657401619cdbf5ba8cd913ee6b0baca6dba05a97a"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.9.0/dev_0.9.0_darwin_amd64.tar.gz"
+      sha256 "45da68cac77f82af6bdf26aece9607a5d6962247c8209ea96c8e960bb72d52ae"
 
       define_method(:install) do
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.8.0/dev_0.8.0_darwin_arm64.tar.gz"
-      sha256 "a1287c134dccf476aebd9e465ec19c35e85d7e3916d0c4108ed5fc9fd4cf9a1a"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.9.0/dev_0.9.0_darwin_arm64.tar.gz"
+      sha256 "92720a8d0872fd3356964642039c2ed1030eeacd3468e35be6665d908b24043d"
 
       define_method(:install) do
         bin.install "dev"
@@ -28,15 +28,15 @@ class Dev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.8.0/dev_0.8.0_linux_amd64.tar.gz"
-      sha256 "46a2838adcb7328495c4fdf890e12e476c3f8310efd81a5477a19cc3b4c2bf6a"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.9.0/dev_0.9.0_linux_amd64.tar.gz"
+      sha256 "1fbf7ca48e3dc88c192c3bc685a53d950245eb382be1458af367b3c79843dbac"
       define_method(:install) do
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dsaiztc/dev/releases/download/v0.8.0/dev_0.8.0_linux_arm64.tar.gz"
-      sha256 "f483797e9fdaad569b6ebfc453c093a8c9ea4217216e304763772e3ca1a584d2"
+      url "https://github.com/dsaiztc/dev/releases/download/v0.9.0/dev_0.9.0_linux_arm64.tar.gz"
+      sha256 "f4db2fea3326c4f5ddc4f8fdd72bc5835bb5f23fd19ccd071a1ea633f1ce3dfb"
       define_method(:install) do
         bin.install "dev"
       end
