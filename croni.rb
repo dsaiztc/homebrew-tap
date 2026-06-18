@@ -5,20 +5,20 @@
 class Croni < Formula
   desc "croni — A friendly CLI for managing scheduled jobs on macOS"
   homepage "https://github.com/dsaiztc/croni"
-  version "0.1.0"
+  version "0.1.1"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/dsaiztc/croni/releases/download/v0.1.0/croni_0.1.0_darwin_amd64.tar.gz"
-    sha256 "5ae751e6061f9decbced7f01e64b61a51a6a76002f4dc5c26ebc0e657bc8fdbf"
+    url "https://github.com/dsaiztc/croni/releases/download/v0.1.1/croni_0.1.1_darwin_amd64.tar.gz"
+    sha256 "c70829fe1286863d1c61a7baa2a22197609a949578a7e55e30235f4551e14c56"
 
     define_method(:install) do
       bin.install "croni"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/dsaiztc/croni/releases/download/v0.1.0/croni_0.1.0_darwin_arm64.tar.gz"
-    sha256 "2dbf4bd2dafebc11eb47ca1f47b5152e45ce789a84df47e490fb9541984f6fa2"
+    url "https://github.com/dsaiztc/croni/releases/download/v0.1.1/croni_0.1.1_darwin_arm64.tar.gz"
+    sha256 "5b8682bfee697fca51d6a3f9e414b774b5c1b205e0eba68d75310b0a67803ebc"
 
     define_method(:install) do
       bin.install "croni"
